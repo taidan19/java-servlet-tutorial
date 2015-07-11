@@ -1,5 +1,5 @@
 apply plugin: 'war'
-apply plugin: 'jetty'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
 group = 'net.cmw'
 version = '1.0-SNAPSHOT'
@@ -10,7 +10,7 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 repositories {
-     maven { url "http://repo.maven.apache.org/maven2" }
+    maven { url "http://repo.maven.apache.org/maven2" }
 }
 
 dependencies {
@@ -18,6 +18,9 @@ dependencies {
     compile 'ch.qos.logback:logback-classic:1.1.3'
 }
 
-jettyRun {
-  contextPath '/'
+gretty {
+    // supported values:
+    // 'jetty7', 'jetty8', 'jetty9', 'tomcat7', 'tomcat8'
+    servletContainer = 'jetty9'
+    contextPath = '/'
 }
