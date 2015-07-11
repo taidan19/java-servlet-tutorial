@@ -1,5 +1,5 @@
 apply plugin: 'war'
-apply plugin: 'jetty'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
 group = 'net.cmw'
 version = '1.0-SNAPSHOT'
@@ -17,6 +17,9 @@ dependencies {
     providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.0.1'
 }
 
-jettyRun {
-  contextPath '/'
+gretty {
+  // supported values:
+  // 'jetty7', 'jetty8', 'jetty9', 'tomcat7', 'tomcat8'
+  servletContainer = 'jetty9'
+  contextPath = '/'
 }

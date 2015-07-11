@@ -1,20 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app 
-  version="3.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns="http://java.sun.com/xml/ns/javaee" 
-  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" >
+<web-app
+        version="3.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-  <display-name>Basic Servlet Example</display-name>
+    <display-name>
+        Basic Servlet Example
+    </display-name>
 
-  <servlet>
-    <servlet-name>Example Servlet</servlet-name>
-    <servlet-class>net.cmw.BasicServlet</servlet-class>
-  </servlet>
+    <!-- This param is available to the whole web app. -->
+    <context-param>
+        <param-name>
+            webXMLLocation
+        </param-name>
+        <param-value>
+            classpath:web.xml
+        </param-value>
+    </context-param>
 
-  <servlet-mapping>
-    <servlet-name>Example Servlet</servlet-name>
-    <url-pattern>/basic</url-pattern>
-  </servlet-mapping>
+    <servlet>
+        <servlet-name>
+            Servlet Context Example
+        </servlet-name>
+        <servlet-class>
+            net.cmw.ServletContextExample
+        </servlet-class>
+    </servlet>
 
+    <servlet>
+        <servlet-name>
+            Servlet Config Example
+        </servlet-name>
+        <servlet-class>
+            net.cmw.ServletConfigExample
+        </servlet-class>
+        <init-param>
+            <param-name>testParam</param-name>
+            <param-value>1</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>
+            Servlet Context Example
+        </servlet-name>
+        <url-pattern>
+            /servlet-context
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+            Servlet Config Example
+        </servlet-name>
+        <url-pattern>
+            /servlet-config
+        </url-pattern>
+    </servlet-mapping>
 </web-app>
