@@ -25,8 +25,5 @@ public class BasicServlet extends HttpServlet {
          */
         PrintWriter writer = resp.getWriter();
         writer.print("This is a test string");
-
-        // Don't forget to close the PrintWriter!
-        writer.close();
     }
 }
