@@ -16,7 +16,8 @@ import java.io.PrintWriter;
  */
 @WebFilter(filterName = "Basic Filter", urlPatterns = {"/*"},
         description = "Basic Filter example using annotations",
-        initParams = {@WebInitParam(name = "testValue", value = "test value")})
+        initParams = {@WebInitParam(name = "testValue", value = "test value")},
+        asyncSupported = true)
 public class LoggingFilter implements Filter {
 
     private static final Logger logger = LoggerFactory.getLogger(LoggingFilter.class);
