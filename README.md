@@ -1,6 +1,6 @@
-## JSP Custom Taglib Example
+## JSP JSTL Example
 
-This project contains examples on how to use the JSTL. 
+This project contains examples on how to use the JSTL.
 
 The project can be built with either Maven or Gradle, so you can use whichever build tool you'd prefer.
 
