@@ -4,7 +4,7 @@ apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.p
 group = 'net.cmwolfe'
 version = '1.0-SNAPSHOT'
 
-description = """Java Servlet Tutorial"""
+description = """JSP taglib Tutorial"""
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
@@ -14,7 +14,8 @@ repositories {
 }
 
 dependencies {
-    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    providedCompile 'javax.servlet:jsp-api:2.0'
 }
 
 gretty {

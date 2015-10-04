@@ -1,0 +1,26 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Simple Custom Tag</short-name>
+
+    <tag>
+        <name>simple_tag</name>
+        <tag-class>net.cmwolfe.FirstSimpleTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>tag_with_body</name>
+        <tag-class>net.cmwolfe.TagWithBody</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+
+    <tag>
+        <name>tag_with_attribute</name>
+        <tag-class>net.cmwolfe.TagWithAttribute</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>prop</name>
+        </attribute>
+    </tag>
+</taglib>

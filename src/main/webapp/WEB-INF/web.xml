@@ -5,15 +5,5 @@
         xmlns="http://java.sun.com/xml/ns/javaee"
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" >
 
-    <display-name>JSP MVC Example</display-name>
-
-    <servlet>
-        <servlet-name>MVC Servlet</servlet-name>
-        <servlet-class>net.cmwolfe.MVCServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>MVC Servlet</servlet-name>
-        <url-pattern>/mvc</url-pattern>
-    </servlet-mapping>
+    <display-name>JSP Taglib Example</display-name>
 </web-app>
