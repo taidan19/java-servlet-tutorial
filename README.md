@@ -1,4 +1,4 @@
-## JSP Custom Taglib Example
+## JSP Syntax Tutorial
 
 This project contains examples of the various kinds of JSP tags.
 
