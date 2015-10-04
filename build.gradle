@@ -4,7 +4,7 @@ apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.p
 group = 'net.cmwolfe'
 version = '1.0-SNAPSHOT'
 
-description = """Java Servlet Tutorial"""
+description = """Java JSP Syntax Tutorial"""
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
