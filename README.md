@@ -1,7 +1,8 @@
-## Java Servlet Example
+## Java Servlet 3.0 Tutorial
 
-This project contains examples on how to use Java Servlets. The repository is broken up into different branches - each branch demonstrates a different feature.
+This project contains examples of Servlet 3.0 specific features.
 
-The project also contains configuration files for both Maven and Gradle, so you can use whichever build tool you'd prefer.
+The project can be built with either Maven or Gradle, so you can use whichever build tool you'd prefer.
 
-All of the branches are configured to be run in an embedded Jetty Server. In Maven, you can launch it by running 'mvn jetty:run', and in Gradle by running 'gradle appRun'. The server will launch on `localhost:8080`.
+The code is configured to be run in an embedded Jetty Server. In Maven, you can launch it by running 'mvn jetty:run', and in Gradle by running 'gradle appRun'. The server will launch on `localhost:8080`.
+
